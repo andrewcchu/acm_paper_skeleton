@@ -1,0 +1,71 @@
+\documentclass[sigconf,10pt]{acmart}
+
+\usepackage[english]{babel}
+\usepackage{totpages}
+
+% Copyright
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference info
+\setcopyright{none}
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+\settopmatter{printacmref=false, printccs=false, printfolios=true}
+
+% DOI
+\acmDOI{}
+
+% ISBN
+\acmISBN{}
+
+%Conference
+%\acmConference[Submitted for review to SIGCOMM]{}
+%\acmYear{2018}
+%\copyrightyear{}
+
+%% {} with no args suppresses printing of the price
+\acmPrice{}
+
+
+\begin{document}
+\title{Title}
+
+%\titlenote{Produces the permission block, and copyright information}
+%\subtitle{Extended Abstract}
+
+\author{Paper \#XXX, \pageref{end_of_body} body pages, \pageref{last_page} total}
+% \author{Firstname Lastname}
+% \authornote{Note}
+% \orcid{1234-5678-9012}
+% \affiliation{%
+%   \institution{Affiliation}
+%   \streetaddress{Address}
+%   \city{City} 
+%   \state{State} 
+%   \postcode{Zipcode}
+% }
+% \email{email@domain.com}
+
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{X.et al.}
+
+\input{sections/abstract.tex}
+
+\maketitle
+
+\input{sections/introduction.tex}
+\input{sections/related.tex}
+\input{sections/conclusion.tex}
+
+\label{end_of_body}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{reference}
+
+\label{last_page}
+
+\end{document}
