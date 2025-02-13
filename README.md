@@ -1,2 +1,2 @@
-# Latex Template for SIGCOMM 2018
+# LaTeX Template for ACM Conferences
 
